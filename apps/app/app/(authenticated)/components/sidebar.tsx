@@ -28,7 +28,6 @@ import {
   SidebarMenuSubItem,
 } from "@repo/design-system/components/ui/sidebar";
 import {
-  AnchorIcon,
   BookOpenIcon,
   BotIcon,
   ChevronRightIcon,
@@ -53,11 +52,6 @@ type GlobalSidebarProperties = {
 };
 
 const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
   navMain: [
     {
       title: "Playground",
@@ -146,11 +140,6 @@ const data = {
     },
   ],
   navSecondary: [
-    {
-      title: "Webhooks",
-      url: "/webhooks",
-      icon: AnchorIcon,
-    },
     {
       title: "Support",
       url: "#",
