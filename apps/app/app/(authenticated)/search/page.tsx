@@ -1,6 +1,5 @@
-import { auth } from "@repo/auth/server";
 import { database } from "@repo/database";
-import { notFound, redirect } from "next/navigation";
+import { redirect } from "next/navigation";
 import { Header } from "../components/header";
 
 type SearchPageProperties = {
@@ -22,18 +21,9 @@ export const generateMetadata = async ({
 
 const SearchPage = async ({ searchParams }: SearchPageProperties) => {
   const { q } = await searchParams;
-  const pages = await database.page.findMany({
-    where: {
-      name: {
-        contains: q,
-      },
-    },
+  const pages = await database.query.pages.findMany({
+    where: (page, { like }) => like(page.name, `%${q}%`),
   });
-  const { orgId } = await auth();
-
-  if (!orgId) {
-    notFound();
-  }
 
   if (!q) {
     redirect("/");
@@ -41,7 +31,7 @@ const SearchPage = async ({ searchParams }: SearchPageProperties) => {
 
   return (
     <>
-      <Header page="Search" pages={["Building Your Application"]} />
+      <Header currentPage="Search" pages={["Building Your Application"]} />
       <div className="flex flex-1 flex-col gap-4 p-4 pt-0">
         <div className="grid auto-rows-min gap-4 md:grid-cols-3">
           {pages.map((page) => (
@@ -50,7 +40,7 @@ const SearchPage = async ({ searchParams }: SearchPageProperties) => {
             </div>
           ))}
         </div>
-        <div className="min-h-[100vh] flex-1 rounded-xl bg-muted/50 md:min-h-min" />
+        <div className="min-h-screen flex-1 rounded-xl bg-muted/50 md:min-h-min" />
       </div>
     </>
   );

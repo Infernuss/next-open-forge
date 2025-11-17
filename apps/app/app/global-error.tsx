@@ -1,8 +1,8 @@
 "use client";
 
+import { analytics } from "@repo/analytics";
 import { Button } from "@repo/design-system/components/ui/button";
 import { fonts } from "@repo/design-system/lib/fonts";
-import { captureException } from "@sentry/nextjs";
 import type NextError from "next/error";
 import { useEffect } from "react";
 
@@ -11,9 +11,9 @@ type GlobalErrorProperties = {
   readonly reset: () => void;
 };
 
-const GlobalError = ({ error, reset }: GlobalErrorProperties) => {
+export default function GlobalError({ error, reset }: GlobalErrorProperties) {
   useEffect(() => {
-    captureException(error);
+    analytics.captureException(error);
   }, [error]);
 
   return (
@@ -24,6 +24,4 @@ const GlobalError = ({ error, reset }: GlobalErrorProperties) => {
       </body>
     </html>
   );
-};
-
-export default GlobalError;
+}
