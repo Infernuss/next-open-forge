@@ -1,5 +1,4 @@
 "use server";
-import "server-only";
 
 import { cacheTag, revalidateTag } from "next/cache";
 import { headers } from "next/headers";
