@@ -2,9 +2,9 @@
 
 import { signUpEmail } from "@repo/auth";
 import { generateUsername } from "@repo/auth/utils/username";
+import { product } from "@repo/product";
 import { redirect } from "next/navigation";
 import type { SignUpFormSchema } from "../schemas";
-import { analytics } from "@repo/product";
 
 export async function signUpSubmit(data: SignUpFormSchema) {
   const { firstName, lastName, email, password } = data;
@@ -18,7 +18,7 @@ export async function signUpSubmit(data: SignUpFormSchema) {
   }
 
   const { id } = user;
-  analytics.identify(id, {
+  product.identify(id, {
     properties: {
       email,
       name,

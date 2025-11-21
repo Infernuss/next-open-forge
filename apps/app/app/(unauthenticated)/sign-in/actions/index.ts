@@ -1,7 +1,7 @@
 "use server";
 
 import { signInEmail } from "@repo/auth";
-import { analytics } from "@repo/product";
+import { product } from "@repo/product";
 import { redirect } from "next/navigation";
 import type { SignInFormSchema } from "../schemas";
 
@@ -15,7 +15,7 @@ export async function signInSubmit(data: SignInFormSchema) {
   }
 
   const { id, name } = user;
-  analytics.identify(id, {
+  product.identify(id, {
     properties: {
       email,
       name,
